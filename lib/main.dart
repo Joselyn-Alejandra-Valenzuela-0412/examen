@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'principal.dart';
-import 'widuno.dart';
-import 'WidDos.dart';
-import 'widtres.dart';
-import 'widcuatro.dart';
-import 'widcinco.dart';
-import 'widseis.dart';
+import 'pagina_singlechild_scroll.dart';
+import 'pagina_pageview.dart';
+import 'pagina_animatedIcon.dart';
+import 'pagina_navigator.dart';
+import 'pagina_MyRadialNSweepGradient.dart';
+import 'pagina_MyStepper.dart';
+import 'pagina_MyChoiceChip.dart';
+import 'pagina_MyInteractiveViewer.dart';
 
 void main() => runApp(MiRutas());
 
@@ -19,12 +21,14 @@ class MiRutas extends StatelessWidget {
       title: 'Rutas entre Widgets',
       routes: {
         '/': (context) => const Principal(), // Widget principal
-        '/widget1': (context) => const WidUno(),
-        '/widget2': (context) => const WidDos(),
-        '/widget3': (context) => const WidTres(),
-        '/widget4': (context) => const WidCuatro(),
-        '/widget5': (context) => const WidCinco(),
-        '/widget6': (context) => const WidSeis(),
+        '/widget1': (context) => const MySingleChildScrollView(),
+        '/widget2': (context) => MyPageView(),
+        '/widget3': (context) => const MyAnimatedIcon(),
+        '/widget4': (context) => const MyNavigator(),
+        '/widget5': (context) => const MyRadialNSweepGradient(),
+        '/widget6': (context) => const MyStepper(),
+        '/widget7': (context) => const MyChoiceChip(),
+        '/widget8': (context) => const MyInteractiveViewer(),
       },
     );
   }
